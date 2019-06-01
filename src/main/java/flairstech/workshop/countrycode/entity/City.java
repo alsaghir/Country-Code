@@ -2,8 +2,6 @@ package flairstech.workshop.countrycode.entity;
 
 import javax.persistence.*;
 
-import static javax.persistence.FetchType.EAGER;
-
 @Entity
 public class City {
 

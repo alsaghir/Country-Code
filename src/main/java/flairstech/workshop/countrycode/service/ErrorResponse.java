@@ -3,9 +3,7 @@ package flairstech.workshop.countrycode.service;
 public class ErrorResponse implements GenericResponse{
     private String errorMessage;
 
-    public ErrorResponse(){}
-
-    public ErrorResponse(String errorMessage){
+    ErrorResponse(String errorMessage){
         this.errorMessage = errorMessage;
     }
 

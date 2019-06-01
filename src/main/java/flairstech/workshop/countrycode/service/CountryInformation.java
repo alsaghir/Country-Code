@@ -23,7 +23,6 @@ public class CountryInformation {
 
     private final CountryRepository countryRepository;
     private final CountryLanguageRepository countryLanguageRepository;
-    private final ObjectMapper objectMapper;
 
     @Autowired
     public CountryInformation(CountryRepository countryRepository,
@@ -31,8 +30,7 @@ public class CountryInformation {
                               ObjectMapper objectMapper) {
         this.countryRepository = countryRepository;
         this.countryLanguageRepository = countryLanguageRepository;
-        this.objectMapper = objectMapper;
-        this.objectMapper.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE);
+        objectMapper.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE);
     }
 
     @GetMapping("/{countryCode}")

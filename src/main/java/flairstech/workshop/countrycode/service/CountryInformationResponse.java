@@ -85,7 +85,7 @@ public class CountryInformationResponse implements GenericResponse {
     }
 
     // Using builder pattern for converting to DTO
-    public static CountryInformationResponse convert(Country country, CountryLanguage countryLanguage){
+    static CountryInformationResponse convert(Country country, CountryLanguage countryLanguage){
         return new Builder()
                 .name(country.getName())
                 .continent(country.getContinent())

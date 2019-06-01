@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface CountryLanguageRepository extends JpaRepository<CountryLanguage, String> {
-    public List<CountryLanguage> findByCountryCodeLanguage_CountryCode(String countryCode);
+    List<CountryLanguage> findByCountryCodeLanguage_CountryCode(String countryCode);
 }
